@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>BillPaymentSystem_BPS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Logfile</display-name>
+    <servlet-name>Logfile</servlet-name>
+    <servlet-class>mfrp.bps.log.Logfile</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logfile</servlet-name>
+    <url-pattern>/Logfile</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Loginverification</display-name>
+    <servlet-name>Loginverification</servlet-name>
+    <servlet-class>mfrp.bps.controller.Loginverification</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginverification</servlet-name>
+    <url-pattern>/Loginverification</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>VendorRegisterController</display-name>
+    <servlet-name>VendorRegisterController</servlet-name>
+    <servlet-class>mfrp.bps.controller.VendorRegisterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VendorRegisterController</servlet-name>
+    <url-pattern>/VendorRegisterController</url-pattern>
+  </servlet-mapping>
+</web-app>
